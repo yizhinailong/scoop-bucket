@@ -10,13 +10,13 @@
 添加 bucket：
 
 ```pwsh
-scoop bucket add scoop-bucket https://github.com/yizhinailong/scoop-bucket
+scoop bucket add yizhinailong https://github.com/yizhinailong/scoop-bucket
 ```
 
 安装应用：
 
 ```pwsh
-scoop install scoop-bucket/<manifest-name>
+scoop install yizhinailong/<manifest-name>
 ```
 
 更新 bucket 和已安装的应用：
