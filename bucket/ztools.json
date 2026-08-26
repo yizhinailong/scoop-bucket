@@ -15,10 +15,12 @@
             "ZTools"
         ]
     ],
+    "bin": "ZTools.exe",
     "env_set": {
         "ZTOOLS_DATA_ROOT": "$persist_dir\\data"
     },
     "persist": "data",
+    "notes": "ZTools runs in the background after launch. Press Alt+Z to open the launcher.",
     "checkver": {
         "github": "https://github.com/ZToolsCenter/ZTools"
     },
