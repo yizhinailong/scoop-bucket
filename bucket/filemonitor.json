@@ -1,0 +1,32 @@
+{
+    "version": "0.1.0",
+    "description": "A file monitoring application for Windows.",
+    "homepage": "https://github.com/yizhinailong/file-monitoring",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yizhinailong/file-monitoring/releases/download/v0.1.0/FileMonitor-0.1.0-windows-x64.zip",
+            "hash": "8e9b20ae9eb1057e4153ecf966b02e45ad6ff1aaa1b9cc9ac83ab1bd7a1d69e2"
+        }
+    },
+    "bin": "FileMonitor.exe",
+    "shortcuts": [
+        [
+            "FileMonitor.exe",
+            "FileMonitor"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/yizhinailong/file-monitoring"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yizhinailong/file-monitoring/releases/download/v$version/FileMonitor-$version-windows-x64.zip",
+                "hash": {
+                    "url": "$baseurl/$basename.sha256"
+                }
+            }
+        }
+    }
+}
